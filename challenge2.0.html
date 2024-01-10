@@ -1,0 +1,84 @@
+<style>
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .back-button {
+    background-color: rgb(236, 225, 225);
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .next-button{
+    background-color: rgb(236, 225, 225);
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  /* Pagination links */
+  .pagination a {
+    color: blue;
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    vertical-align: top;
+  }
+
+
+
+  .stretch-container {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Make the body take the full height of the viewport */
+      background-color: green;
+    }
+
+    .stretch-container {
+      width: 200px; /* Set a fixed width for the stretch */
+      padding: 20px; /* Add padding to the stretch */
+      background-color: green;
+      border: 1px solid white;
+      border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+      margin: 20px; /* Add margin to the stretch */
+      height: 100%; /* Stretch to fill the height of the container */
+    }
+</style>
+
+<div>
+  <button class="back-button">
+    Back
+  </button>
+
+  <div class="pagination">
+    <a href="#">1</a>
+    <a class="active" href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+  </div>
+
+  <button class="next-button">
+    Next
+  </button>
+
+  <div class="stretch-container">
+    This is a simple stretch.
+  </div>
+</div>
